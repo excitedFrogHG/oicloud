@@ -1,4 +1,17 @@
 /* CSS Document */
+span.ll:hover{
+	cursor: pointer;
+}
+.greyback{
+	margin: 0;
+	padding: 0;
+	background-color: #C7C3C3;
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
 /* Blocks */
 
 
@@ -7,7 +20,7 @@
 	background-color:#1C470A;
 	text-decoration: none;
 	margin: 3px;
-	padding: 5px;
+	padding: 5px 5px 5px 30px;
 	color: #FFFFFF;
 	transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s; /* Firefox 4 */
@@ -17,5 +30,20 @@
 
 .btn-green:hover{
 	background-color: #035200;
-	padding-right: 30px;
+	padding: 5px 30px 5px 5px;
+}
+
+/* Login  */
+.login_form{
+	z-index: 2;
+	display: none;
+	background-color: white;
+	border: solid #000000 2px;
+	border-radius: 15px;
+	position: fixed;
+	left: 30%;
+	width: 30%;
+	margin: 10% 5% 10% 5%;
+	padding: 10% 5%;
+	
 }
