@@ -23,18 +23,20 @@ span.ll:hover{
 	padding: 5px 5px 5px 30px;
 	color: #FFFFFF;
 	transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s; /* Firefox 4 */
-	-webkit-transition-duration: 0.5s; /* Safari 和 Chrome */
-	-o-transition-duration: 0.5s; /* Opera */
+	/*-moz-transition-duration: 0.5s; /* Firefox 4 */
+	/*-webkit-transition-duration: 0.5s; /* Safari 和 Come */
+	/*-o-transition-duration: 0.5s; /* Opera */
+	
 }
 
 .btn-green:hover{
 	background-color: #035200;
 	padding: 5px 30px 5px 5px;
+	color: white;
 }
 
 /* Login  */
-.login_form{
+.pop_form{
 	z-index: 2;
 	display: none;
 	background-color: white;
