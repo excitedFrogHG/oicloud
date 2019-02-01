@@ -46,7 +46,9 @@ class userRegister{
 		$this->school=$sch;
 		$this->email=$e;
 		$this->gender=$gen;
-		
+		$json_config = file_get_contents("../config/db_config.json");  //从json文件读取数据库配置
+		$dbconfig = json_decode($json_config);  //将配置解码，转换为数组
+		$Connector = new sqlConector($dbconfig['host'],$dbconfig['user'],base64_decode($dbconfig['pass']),$dbconfig['dbname']);  //连接数据库
 	}
 }
 class Verify{
